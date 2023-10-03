@@ -3,6 +3,13 @@
 
 @section('content')
 
- <h1>PD 2 - {{ $title }}</h1>
- 
+   @if (count($items) > 0)
+
+        //
+
+   @else
+        <p>Nav atrasts neviens ieraksts</p>
+
+    @endif
+
 @endsection
