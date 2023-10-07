@@ -1,6 +1,7 @@
 @extends('layout')  
 @section('content')      
-<h1>{{ $title }}</h1>      
+    <h1>{{ $title }}</h1>
+    <hr>  
     @if ($errors->any())         
         <div class="alert alert-danger">Lūdzu, novērsiet radušās kļūdas!</div>     
     @endif  

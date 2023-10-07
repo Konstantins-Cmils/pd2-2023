@@ -1,7 +1,8 @@
 @extends('layout')  
 
 @section('content')      
-<h1>{{ $title }}</h1>      
+    <h1>{{ $title }}</h1>
+    <hr>   
     @if (count($items) > 0)          
         <table class="table table-striped table-hover table-sm">             
             <thead class="thead-light">                 
