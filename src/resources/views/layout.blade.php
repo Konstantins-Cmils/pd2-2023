@@ -22,10 +22,18 @@
                     <ul class="navbar-nav">                 
                         <li class="nav-item">                     
                             <a class="nav-link" href="/">Sākumlapa</a>                 
-                        </li>                 
-                        <li class="nav-item">                     
-                            <a class="nav-link" href="/authors">Autori</a>                 
-                        </li>             
+                        </li>
+                        @if(Auth::check())      
+                        <li class="nav-item">         
+                            <a class="nav-link" href="/authors">Autori</a>     
+                        </li>      
+                        <li class="nav-item">         
+                            <a class="nav-link" href="/books">Grāmatas</a>     
+                        </li>      <li class="nav-item">         
+                            <a class="nav-link" href="/logout">Beigt darbu</a>     
+                        </li>  @else      <li class="nav-item">         
+                            <a class="nav-link" href="/login">Pieslēgties</a>     
+                        </li>  @endif            
                     </ul>         
                 </div>     
             </div> 
