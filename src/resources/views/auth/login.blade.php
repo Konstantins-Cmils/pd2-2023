@@ -7,8 +7,8 @@
             Neizdevās pieslēgties. Lūdzu, mēģiniet vēlreiz!         
         </div>     
     @endif  
-        
-    <form method="post" action="/auth">         
+
+    <form method="post" action="/authenticate">         
         @csrf 
 
         <div class="mb-3">             
